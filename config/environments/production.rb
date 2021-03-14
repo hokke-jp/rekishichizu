@@ -69,7 +69,7 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
 
   # 下記2行、aws-sesのための設定 2021/3/14
-  config.action_mailer.default_url_options = { host: 'rekishichizu.com' }
+  config.action_mailer.default_url_options = { host: 'www.rekishichizu.com', :protocol => 'https' }
   config.action_mailer.delivery_method = :ses
 
   # Ignore bad email addresses and do not raise email delivery errors.
