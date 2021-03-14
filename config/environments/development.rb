@@ -41,6 +41,9 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  # 下記の行、aws-sesのための設定 2021/3/14
+  config.action_mailer.delivery_method = :ses
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
