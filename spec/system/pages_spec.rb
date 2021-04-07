@@ -5,7 +5,7 @@ describe PagesController, type: :system do
     it 'ホームページの項目チェック' do
       visit root_path
       expect(page).to have_title('歴史地図')
-      expect(page).to have_content 'トレンド'
+      expect(page).to have_content '人気'
     end
   end
 
