@@ -1,23 +1,23 @@
-<nav class="hidden lg:block sticky top-0 w-56">
-  <div style="top: 30px" class="sticky border-r-2 mt-10 text-xl">
+<nav class="hidden lg:block sticky top-0 w-56 bg-green-200 opacity-50">
+  <div style="top: 30px" class="sticky mt-10 text-xl">
 
-    <p class="w-10/12 mx-auto mb-16 border-b-2">
+    <p class="mx-auto mb-16 border-b-2">
       <span class="block w-4/5 mx-auto">
         <%= link_to "ホーム", root_path, {class: "triangle"} %>
       </span>
     </p>
-    <p class="w-10/12 mx-auto mb-16 border-b-2">
+    <p class="mx-auto mb-16 border-b-2">
         <span class="block w-4/5 mx-auto">
         <%= link_to "マップ", map_path, {class: "triangle"} %>
         </span>
     </p>
-    <p class="w-10/12 mx-auto mb-16 border-b-2">
+    <p class="mx-auto mb-16 border-b-2">
         <span class="block w-4/5 mx-auto">
         <%= link_to "検索ページ", microposts_path, {class: "triangle"} %>
         </span>
     </p>
     <% if logged_in? %>
-      <p class="w-10/12 mx-auto mb-16 border-b-2">
+      <p class="mx-auto mb-16 border-b-2">
         <span class="block w-4/5 mx-auto">
           <%= link_to "ユーザー", current_user, {class: "triangle"} %>
         </span>
@@ -26,7 +26,7 @@
 
   <% if current_page?(map_path) %>
     <div class="w-10/12 mt-20 mx-auto py-6 px-5 rounded bg-gray-200 text-lg">
-      <p>ピンを</br>ダブルクリックか</br>右クリックで拡大</p>
+      <p>ピンを</br>右クリックで拡大</p>
     </div>
   <% end %>
 
